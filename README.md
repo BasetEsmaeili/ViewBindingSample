@@ -3,7 +3,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://forthebadge.com)
 ![platform](https://img.shields.io/badge/Platform-Android-green?style=for-the-badge&logo=android)
 
-View binding is a feature that allows you to more easily write code that interacts with views.[More in Android Developers]:https://developer.android.com/topic/libraries/view-binding
+View binding is a feature that allows you to more easily write code that interacts with views.[More in Android Developers](https://developer.android.com/topic/libraries/view-binding)
 
 ![demo](assets/demo.gif)
 
