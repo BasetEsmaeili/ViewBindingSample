@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <View
+            android:id="@+id/frame_profile_background"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/frame_profile_border"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_profile_image_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="@dimen/width_border_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_applicant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/iran_sans_medium"
+            android:gravity="center"
+            android:text="@string/label_user_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_label_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_profile_background" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_applicant_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/iran_sans_light"
+            android:gravity="center"
+            android:text="@string/label_position"
+            android:textSize="@dimen/size_label_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_applicant_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:fontFamily="@font/iran_sans_medium"
+            android:gravity="center"
+            android:text="@string/label_meeting"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/size_label_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_applicant_position" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_meeting_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/iran_sans_light"
+            android:gravity="center"
+            android:text="@string/label_meeting_extra"
+            android:textSize="@dimen/size_label_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_meeting" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_stn"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_stn"
+            android:fontFamily="@font/iran_sans_medium"
+            android:padding="@dimen/padding_stn"
+            android:text="@string/label_accept"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="@dimen/elevation_btn_accept"
+            app:cornerRadius="@dimen/radius_action_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_meeting_extra" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_decline"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_stn"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_stn"
+            android:fontFamily="@font/iran_sans_medium"
+            android:padding="@dimen/padding_stn"
+            android:text="@string/label_decline"
+            android:textColor="@android:color/tab_indicator_text"
+            app:cornerRadius="@dimen/radius_action_buttons"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_meeting_extra"
+            app:strokeColor="@android:color/tab_indicator_text"
+            app:strokeWidth="1dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ViewBinding</string>
+    <string name="label_user_name">هلیا غلامی</string>
+    <string name="label_position">توسعه دهنده ارشد Android</string>
+    <string name="label_meeting">دراخوست ملاقات</string>
+    <string name="label_meeting_extra">"1398/04/21,اتاق C"</string>
+    <string name="label_accept">قبول درخواست</string>
+    <string name="label_decline">موکول به بعد</string>
+    <string name="message_decline">آیا می خواهید درخواست ملاقات لغو گردد؟</string>
+    <string name="label_confirm">بله</string>
+    <string name="message_accept">ملاقات به لیست TODO شما اضافه گردید.</string>
+</resources>

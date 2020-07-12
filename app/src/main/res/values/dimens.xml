@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_border_profile">16dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="size_label_big">24sp</dimen>
+    <dimen name="size_label_medium">18sp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="radius_action_buttons">36dp</dimen>
+    <dimen name="padding_stn">8dp</dimen>
+    <dimen name="margin_stn">8dp</dimen>
+    <dimen name="elevation_btn_accept">8dp</dimen>
+</resources>
